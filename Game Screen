@@ -1,15 +1,43 @@
 package Game;
 
+import java.awt.Color;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class GameScreen extends JFrame implements ActionListener{
-	
+	private JLabel leftTitle,centreTitle,rightTitle,blank;
 	public GameScreen() {
 		
-		setLayout(new GridLayout(3,1));
-		setLayout(new GridLayout(3,1));
+		setLayout(new GridLayout(1,3));
+		//panels for the main menu
+		JPanel left = new JPanel(new GridLayout(7, 1));
+		JPanel main = new JPanel(new GridLayout(7, 1));
+		main.setBackground(Color.red);
+		JPanel right = new JPanel(new GridLayout(7, 1));
+		add(left);
+		add(main);
+		add(right);
+		blank = new JLabel("", JLabel.RIGHT); //creates a blank label
+		leftTitle = new JLabel("Pick", JLabel.RIGHT); //left part of the title screen
+		centreTitle = new JLabel("A", JLabel.RIGHT); //centre piece of the title screen
+		rightTitle = new JLabel("Game", JLabel.LEFT); //right part of the title screen
+		left.add(blank);
+		main.add(blank);
+		right.add(blank);
+		left.add(leftTitle);
+		main.add(centreTitle);
+		right.add(rightTitle);
+		}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }
