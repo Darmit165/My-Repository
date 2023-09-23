@@ -1,0 +1,17 @@
+package Game;
+
+import javax.swing.JFrame;
+
+
+public class RunGame {
+
+	public static void main(String[] args) {
+		GameScreen connectFour = new GameScreen();
+		connectFour.setSize(800, 700);
+		connectFour.setTitle("Font Size");
+		connectFour.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		connectFour.setVisible(true);
+
+	}
+
+}
