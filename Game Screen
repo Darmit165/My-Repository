@@ -1,6 +1,7 @@
 package Game;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -13,7 +14,8 @@ import javax.swing.JTextField;
 public class GameScreen extends JFrame implements ActionListener{
 	private JLabel leftTitle,centreTitle,rightTitle,blank;
 	public GameScreen() {
-		
+		Font papyrus_80;
+		papyrus_80 = new Font("Papyrus", Font.BOLD, 80);
 		setLayout(new GridLayout(1,3));
 		//panels for the main menu
 		JPanel left = new JPanel(new GridLayout(7, 1));
@@ -33,6 +35,8 @@ public class GameScreen extends JFrame implements ActionListener{
 		left.add(leftTitle);
 		main.add(centreTitle);
 		right.add(rightTitle);
+		// Title Name
+		int x = 
 		}
 
 	@Override
