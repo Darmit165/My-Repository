@@ -1,0 +1,14 @@
+switch ( Math.floor(Math.random()*9) ) {
+        case 1 || 2 : col = "red";
+        break;
+        case 3 || 4: col = "blue";
+        break;
+        case 5 || 6: col = "yellow";
+        break;
+        case 7 || 8: col = "green";
+        default: col = "purple";
+    }
+    if  (col == "red" || col == "blue" || col == "yellow" || col == "green" )
+    {alert("The random colour generated was "+ col ); }
+    alert("The colour generated was the rare "+ col);
+    
